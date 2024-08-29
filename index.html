@@ -1227,14 +1227,16 @@
         .md-standart-slider .slider-hint {
             display: none;
         }
-
+        .md-standart-slider .swiper-container{
+            height: auto !important;
+        }
+        .md-standart-slider .swiper-container .swiper-wrapper{
+            height: auto !important;
+        }
         .md-standart-slider .swiper-container {
-            width: 100%;
-            height: 100%;
         }
 
         .md-standart-slider .swiper-container .swiper-wrapper {
-            height: 100%;
             -webkit-box-align: stretch;
             -ms-flex-align: stretch;
             align-items: stretch;
@@ -1666,7 +1668,6 @@
         .swiper-wrapper {
             position: relative;
             width: 100%;
-            height: 100%;
             z-index: 1;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1689,7 +1690,6 @@
             -ms-flex-negative: 0;
             flex-shrink: 0;
             width: 100%;
-            height: 100%;
             position: relative;
             -webkit-transition-property: -webkit-transform;
             transition-property: -webkit-transform;
@@ -10180,7 +10180,7 @@
             <div class="wrapper">
 
                 <div class="header__logo">
-                    <a href="https://alex-dein.ru/portfolio/vremonte">
+                    <a href="index.html">
                         <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/vremont-1.svg"
                             alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
                                 src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/vremont-1.svg"
@@ -10214,13 +10214,13 @@
                 <div class="header__social">
                     <p>Есть вопрос? <br> Задайте онлайн</p>
                     <div class="social-links">
-                        <a target="_blank" href="https://wa.me/+79683002018">
+                        <a target="_blank" href="https://wa.me/+79676126055">
                             <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/whats-app.png"
                                 alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
                                     src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/whats-app.png"
                                     alt=""></noscript>
                         </a>
-                        <a target="_blank" href="https://t.me/+79683002018">
+                        <a target="_blank" href="https://t.me/+79676126055">
                             <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/telegram.png"
                                 alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
                                     src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/telegram.png"
@@ -10232,7 +10232,7 @@
 
                 <div class="header__contacts">
                     <p>Звоните, ежедневно 09:00-18:00</p>
-                    <a href="tel:+7 (968) 300-20-18 ">+7 (968) 300-20-18 </a>
+                    <a href="tel:+73912726055">+7 (391) 272-60-55</a>
 
 
 
@@ -10258,59 +10258,47 @@
                     <div class="menu-menyu-v-shapke-container">
                         <ul class="nav">
 
-                            <li class="nav-item  dropdown-item"><a class="nav-link" href="#">Другие
-                                    страницы</a><span></span>
+                            <li class="nav-item  dropdown-item  nav-item--active-ancestor  nav-item--active-parent"><a
+                                    class="nav-link" href="#">Другие страницы</a><span></span>
                                 <ul class="nav-menu  nav-menu--level-1">
-                                    <li class="nav-item  dropdown-item"><a class="nav-link"
-                                            href="https://alex-dein.ru/portfolio/vremonte/portfolios/">Портфолио</a><span></span>
+                                    <li class="nav-item  dropdown-item  nav-item--active"><a class="nav-link"
+                                            href="portfolio.html" aria-current="page">Портфолио</a><span></span>
                                         <ul class="nav-menu  nav-menu--level-2">
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/portfolios/3-h-komnatnaya/">3-х
+                                            <li class="nav-item"><a class="nav-link" href="3.html">3-х
                                                     комнатная</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/">2-х
+                                            <li class="nav-item"><a class="nav-link" href="2.html">2-х
                                                     комнатная</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/portfolios/chastnyj-dom/">Частный
+                                            <li class="nav-item"><a class="nav-link" href="house.html">Частный
                                                     дом</a><span></span></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item  dropdown-item"><a class="nav-link"
-                                            href="https://alex-dein.ru/portfolio/vremonte/services/">Услуги</a><span></span>
+                                            href="services.html">Услуги</a><span></span>
                                         <ul class="nav-menu  nav-menu--level-2">
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/services/dizajn-proekta/">Дизайн
+                                            <li class="nav-item"><a class="nav-link" href="dis.html">Дизайн
                                                     проекта</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/services/priemka-kvartiry/">Приемка
+                                            <li class="nav-item"><a class="nav-link" href="kvart.html">Приемка
                                                     квартиры</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/services/ukladka-plitki/">Укладка
+                                            <li class="nav-item"><a class="nav-link" href="uklad.html">Укладка
                                                     плитки</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/services/elektromontazhnye-raboty/">Электромонтажные
+                                            <li class="nav-item"><a class="nav-link" href="works.html">Электромонтажные
                                                     работы</a><span></span></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item  dropdown-item"><a class="nav-link"
-                                            href="https://alex-dein.ru/portfolio/vremonte/blog/">Статьи</a><span></span>
+                                            href="blog.html">Статьи</a><span></span>
                                         <ul class="nav-menu  nav-menu--level-2">
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/blog/sovety-po-remontu/">Советы
+                                            <li class="nav-item"><a class="nav-link" href="sov.html">Советы
                                                     по ремонту</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/blog/chernovye-raboty/">Черновые
+                                            <li class="nav-item"><a class="nav-link" href="blackworks.html">Черновые
                                                     работы</a><span></span></li>
-                                            <li class="nav-item"><a class="nav-link"
-                                                    href="https://alex-dein.ru/portfolio/vremonte/blog/planirovanie-remonta/">Планирование
+                                            <li class="nav-item"><a class="nav-link" href="plan.html">Планирование
                                                     ремонта</a><span></span></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link"
-                                            href="https://alex-dein.ru/portfolio/vremonte/skolko-budet-stoit-remont-kvartir/">Сколько
+                                    <li class="nav-item"><a class="nav-link" href="cost.html">Сколько
                                             будет стоить ремонт квартир</a><span></span></li>
-                                    <li class="nav-item"><a class="nav-link"
-                                            href="https://alex-dein.ru/portfolio/vremonte/spasibo/">Спасибо</a><span></span>
+                                    <li class="nav-item"><a class="nav-link" href="thank.html">Спасибо</a><span></span>
                                     </li>
                                 </ul>
                             </li>
@@ -11825,7 +11813,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     <div class="slide-phones">
                                         <p>Звоните</p>
 
-                                        <a href="tel:+7 (968) 300-20-18  ">+7 (968) 300-20-18 </a>
+                                        <a href="tel:+73912726055">+7 (391) 272-60-55</a>
                                     </div>
                                     <div class="slide-text"></div>
                                     <div class="slide-bottom">
@@ -11910,7 +11898,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     <div class="slide-phones">
                                         <p>Звоните</p>
 
-                                        <a href="tel:+7 (968) 300-20-18  ">+7 (968) 300-20-18 </a>
+                                        <a href="tel:+73912726055">+7 (391) 272-60-55</a>
                                     </div>
                                     <div class="slide-text"></div>
                                     <div class="slide-bottom">
@@ -11994,7 +11982,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     <div class="slide-phones">
                                         <p>Звоните</p>
 
-                                        <a href="tel:+7 (968) 300-20-18  ">+7 (968) 300-20-18 </a>
+                                        <a href="tel:+73912726055">+7 (391) 272-60-55</a>
                                     </div>
                                     <div class="slide-text"></div>
                                     <div class="slide-bottom">
@@ -12087,7 +12075,8 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
             <div class="reasons__container">
                 <div class="reasons__info">
                     <h2 class="reasons__title md-main-title" onscrolldisplay_js="">Работаем на совесть <br> и относимся
-                        <br> по - человечески внимательно <br> к клиентам</h2>
+                        <br> по - человечески внимательно <br> к клиентам
+                    </h2>
                     <h3 class="reasons__sub-title">Что вы получите, обратившись к нам</h3>
                 </div>
 
@@ -12346,7 +12335,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                             <p>Рассказываю и показываю <br> как мы работаем за 2 минуты</p>
                             <p></p>
                         </div>
-                        <a href="https://youtu.be/Lj2vc-mofxY" data-fancybox="produce__video" class="video-block__btn"
+                        <a href="" data-fancybox="produce__video" class="video-block__btn"
                             videobtn_js="">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12425,7 +12414,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
             </div>
         </div>
     </section>
-    <section class="services" loadmorecontainer_js="" style="background: " id="usslugi">
+    <section class="services" loadmorecontainer_js="" style="" id="usslugi">
         <div class="wrapper">
 
             <h2 class="services__title md-main-title">Ремонт под любой бюджет</h2>
@@ -12433,13 +12422,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 стандартно высокое</div>
             <div class="services__container">
                 <div class="container-flex">
-
-
-
-
-
                     <div class="services__item">
-
                         <div class="item-img">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12448,43 +12431,24 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">
-
-
-                                Базовый</div>
-                            <div class="item-text">· Концепция<br>
-                                · Планировочные решения<br>
-                                · Рабочая документация</div>
-                            <div class="item-title" style="padding-bottom: 1rem;">1700 руб/м2</div>
+                            <div class="item-title">Капитальный ремонт квартир</div>
+                            <div class="item-text">
+                                · Демонтаж старых покрытий и зачистка поверхностей;<br>
+                                · Замена труб отопления, водоснабжения и канализации;<br>
+                                · Подготовка и выравнивание поверхностей;<br>
+                                · Замена электропроводки, подключение розеток и выключателей; <br>
+                                · Чистовая отделка; <br>
+                                · Установка межкомнатных дверей.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 12500  руб/м2</div>
                             <div class="item-bottom">
-
-
                                 <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
-
-
                                     <span>Узнать точную стоимость</span>
                                 </button>
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
                     <div class="services__item">
-
                         <div class="item-img">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12493,43 +12457,25 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">
-
-
-                                Оптимальный</div>
-                            <div class="item-text">· Концепция<br>
-                                · Планировочные решения<br>
-                                · Рабочая документация</div>
-                            <div class="item-title" style="padding-bottom: 1rem;">1700 руб/м2</div>
+                            <div class="item-title">Дизайнерский ремонт квартир</div>
+                            <div class="item-text">
+                                · Демонтажные работы и подготовка;<br>
+                                · Сантехнические и электромонтажные работы;<br>
+                                · Выравнивание поверхностей с соблюдением геометрии;<br>
+                                · Чистовая отделка поверхностей;<br>
+                                · Монтаж декоративных элементов;<br>
+                                · Монтаж натяжного потолка и осветительных приборов;<br>
+                                · Установка дверей.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 20000 руб/м2</div>
                             <div class="item-bottom">
-
-
                                 <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
-
-
                                     <span>Узнать точную стоимость</span>
                                 </button>
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
                     <div class="services__item">
-
                         <div class="item-img">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12538,43 +12484,25 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">
-
-
-                                Премиум</div>
-                            <div class="item-text">· Концепция<br>
-                                · Планировочные решения<br>
-                                · Рабочая документация</div>
-                            <div class="item-title" style="padding-bottom: 1rem;">1700 руб/м2</div>
+                            <div class="item-title">Современный евроремонт</div>
+                            <div class="item-text">
+                                · Зачистка и подготовка поверхностей;<br>
+                                · Электромонтажные и сантехнические работы;<br>
+                                · Необходимая подготовка и выравнивание поверхностей; <br>
+                                · Современная чистовая отделка; <br>
+                                · Установка декоративных элементов (молдинги, рейки, 3D панели); <br>
+                                · Подключение осветительных приборов; <br>
+                                · Монтаж дверей.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 14000 руб/м2</div>
                             <div class="item-bottom">
-
-
                                 <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
-
-
                                     <span>Узнать точную стоимость</span>
                                 </button>
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
                     <div class="services__item">
-
                         <div class="item-img">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12583,45 +12511,73 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                         <div class="item-content">
-                            <div class="item-title">
-
-
-                                Индивидуальный<br>
-                                по дизайн проекту</div>
-                            <div class="item-text">· Концепция<br>
-                                · Планировочные решения<br>
-                                · Рабочая документация</div>
-                            <div class="item-title" style="padding-bottom: 1rem;">1700 руб/м2</div>
+                            <div class="item-title">Комплексный ремонт квартир</div>
+                            <div class="item-text">
+                                · Подготовка поверхностей перед ремонтом;<br>
+                                · Черновая отделка;<br>
+                                · Чистовая отделка (стены, пол, потолок);<br>
+                                · Электромонтажные работы;<br>
+                                · Монтаж натяжного потолка;<br>
+                                · Установка дверей.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 8000 руб/м2</div>
                             <div class="item-bottom">
-
-
                                 <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
-
-
                                     <span>Узнать точную стоимость</span>
                                 </button>
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="services__item">
+                        <div class="item-img">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                alt=""
+                                data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/rectangle-784-4-1.jpg"><noscript><img
+                                    src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/rectangle-784-4-1.jpg"
+                                    alt=""></noscript>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Косметический ремонт квартир</div>
+                            <div class="item-text">
+                                · Демонтаж старой отделки;<br>
+                                · Минимальная подготовка поверхности;<br>
+                                · Поклейка обоев, укладка напольного покрытия, монтаж плинтуса;<br>
+                                · Монтаж натяжного потолка;<br>
+                                · Подключение освещения, розеток и выключателей.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 4000 руб/м2</div>
+                            <div class="item-bottom">
+                                <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
+                                    <span>Узнать точную стоимость</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="item-img">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                alt=""
+                                data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/rectangle-784-4-1.jpg"><noscript><img
+                                    src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/rectangle-784-4-1.jpg"
+                                    alt=""></noscript>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Ремонт ванной и туалета</div>
+                            <div class="item-text">
+                                · Зачистка и подготовка поверхностей;<br>
+                                · Электромонтажные и сантехнические работы;<br>
+                                · Выравнивание пола и стен;<br>
+                                · Укладка плитки (пол, стены);<br>
+                                · Установка сантехнического оборудования.
+                            </div>
+                            <div class="item-title" style="padding-bottom: 1rem;">От 20000 руб/м2</div>
+                            <div class="item-bottom">
+                                <button class="item-bottom__link md-main-color-btn" popupopen="free-order-popup">
+                                    <span>Узнать точную стоимость</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="services__load-more">
@@ -12810,7 +12766,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                     <span>2 раза в неделю фото и видеоотчет <br> на Telegram с комментариями</span>
                 </div>
                 <div class="clear-talk__link">
-                    <a href="https://t.me/+79683002018" target="_blank" class="md-main-color-btn"
+                    <a href="https://t.me/+79676126055" target="_blank" class="md-main-color-btn"
                         style="background-color:#05a0eb">
                         <span>Написать в Telegram</span>
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
@@ -12828,23 +12784,6 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                             alt=""></noscript>
                 </div>
             </div>
-            <!-- чтобы сделать в черном стиле ставится черная фон-картинка "clear-talk-bg-2.jpg" и класс "md-black-style" для "clear-talk__container" -->
-            <!-- <div data-bg="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/content/clear-talk-bg-2.jpg" class="clear-talk__container md-black-style rocket-lazyload" style="">
-    <h2 class="clear-talk__title md-main-title" onScrollDisplay_JS><b>Давайте начистоту:</b></h2>
-    <div class="clear-talk__text">
-        <p>чтобы узнать стоимость необходимо согласовать размеры и детали проекта</p>
-        <span>Можем начать <b>с переписки в WhatsApp,</b> это удобно и быстро</span>
-    </div>
-    <div class="clear-talk__link">
-        <a href="https://wa.me/+375298075009" target="_blank" class="md-main-color-btn">
-            <span>Написать в Whatsapp</span>
-            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/whats-app.svg"><noscript><img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/whats-app.svg" alt=""></noscript>
-        </a>
-    </div>
-    <div class="clear-talk__img">
-        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/content/clear-talk-1.png"><noscript><img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/content/clear-talk-1.png" alt=""></noscript>
-    </div>
-</div> -->
         </div>
     </section>
     <section data-bg="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/consultation-bg.jpg"
@@ -12923,14 +12862,14 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 дело”</div>
             <div class="reviews2__container">
 
-                <a data-fancybox="reviews2__video" href="https://youtu.be/Lj2vc-mofxY"
+                <a data-fancybox="reviews2__video" href="https://youtu.be/A3kyKtLR7RY?si=4izcQBzp-XQLaGKl"
                     class="reviews2__block reviews2__block-first">
                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                         alt="" class="reviews2__block-img"
                         data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg"><noscript><img
                             src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg" alt=""
                             class="reviews2__block-img"></noscript>
-                    <div class="reviews2__block-time">2:13 cек</div>
+                    <div class="reviews2__block-time">1:36 cек</div>
                     <div class="reviews2__block-info">
                         <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -12953,13 +12892,13 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 </a>
 
                 <div class="reviews2__blocks">
-                    <a data-fancybox="reviews2__video" href="https://youtu.be/Lj2vc-mofxY" class="reviews2__block">
+                    <a data-fancybox="reviews2__video" href="https://youtu.be/Zf2E_xuIY8c?si=6oWegQZLzrkoR7aO" class="reviews2__block">
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                             alt="" class="reviews2__block-img"
                             data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg"><noscript><img
                                 src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg"
                                 alt="" class="reviews2__block-img"></noscript>
-                        <div class="reviews2__block-time">0:18 сек</div>
+                        <div class="reviews2__block-time">2:02 сек</div>
                         <div class="video-block__btn" videobtn_js="">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12968,13 +12907,13 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                     </a>
-                    <a data-fancybox="reviews2__video" href="https://youtu.be/Lj2vc-mofxY" class="reviews2__block">
+                    <a data-fancybox="reviews2__video" href="https://youtu.be/5TE3uqAxVz8?si=Itl6D9loHQwzvBXC" class="reviews2__block">
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                             alt="" class="reviews2__block-img"
                             data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-4.jpg"><noscript><img
                                 src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-4.jpg"
                                 alt="" class="reviews2__block-img"></noscript>
-                        <div class="reviews2__block-time">0:18 сек</div>
+                        <div class="reviews2__block-time">0:40 сек</div>
                         <div class="video-block__btn" videobtn_js="">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12983,13 +12922,13 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                     </a>
-                    <a data-fancybox="reviews2__video" href="https://youtu.be/Lj2vc-mofxY" class="reviews2__block">
+                    <a data-fancybox="reviews2__video" href="https://youtu.be/BjK3Ws9ePaA?si=af4SqzXh-5LHat4U" class="reviews2__block">
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                             alt="" class="reviews2__block-img"
                             data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg"><noscript><img
                                 src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/video.jpg"
                                 alt="" class="reviews2__block-img"></noscript>
-                        <div class="reviews2__block-time">0:18 сек</div>
+                        <div class="reviews2__block-time">1:00 сек</div>
                         <div class="video-block__btn" videobtn_js="">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -12998,13 +12937,13 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     alt=""></noscript>
                         </div>
                     </a>
-                    <a data-fancybox="reviews2__video" href="https://youtu.be/Lj2vc-mofxY" class="reviews2__block">
+                    <a data-fancybox="reviews2__video" href="https://youtu.be/q92mo99tUAE?si=P-ZgsIli5e9gYs3C" class="reviews2__block">
                         <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                             alt="" class="reviews2__block-img"
                             data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-4.jpg"><noscript><img
                                 src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-4.jpg"
                                 alt="" class="reviews2__block-img"></noscript>
-                        <div class="reviews2__block-time">0:18 сек</div>
+                        <div class="reviews2__block-time">7:18 сек</div>
                         <div class="video-block__btn" videobtn_js="">
                             <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                 alt=""
@@ -13018,7 +12957,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
             </div>
         </div>
     </section>
-    <section class="questions" loadmorecontainer_js="" style="background: " id="faq">
+    <section class="questions" loadmorecontainer_js="" style="" id="faq">
         <div class="wrapper">
             <h2 class="questions__title md-main-title" onscrolldisplay_js="">У нас часто спрашивают</h2>
             <div class="questions__container">
@@ -13127,7 +13066,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 </div>
             </div>
             <div class="questions__link">
-                <a href="https://wa.me/+79683002018">
+                <a href="https://wa.me/+79676126055">
                     <span>Задать вопрос в Whatsapp</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -13152,7 +13091,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     d="M19.9579 11.2388C19.6212 13.5056 18.6111 15.4365 17.0117 17.0317C16.0857 17.8713 15.244 18.7948 14.318 19.6343C12.9712 21.0616 11.6243 22.5728 10.2775 24C7.41545 21.0616 4.6376 18.5429 2.02809 15.7724C0.512897 14.0933 -0.0763465 11.9104 0.00783105 9.64361C0.0920086 4.77419 3.88 0.576418 8.59394 0.0726849C13.8971 -0.515004 18.4427 2.50739 19.7896 7.46077C20.1263 8.46823 19.9579 11.0709 19.9579 11.2388ZM10.025 13.2537C11.7927 13.2537 13.3079 11.8265 13.3079 10.0634C13.3079 8.30032 11.7927 6.78912 10.1091 6.78912C8.42559 6.78912 6.82621 8.30032 6.82621 9.97943C6.82621 11.7425 8.25723 13.2537 10.025 13.2537Z"
                                     fill="#31B939"></path>
                             </svg>
-                            <p>Сочи, Пластунская 123 к2</p>
+                            <p>Красноярск ул. Железнодорожников, д. 17</p>
                         </div>
                         <div class="contacts__info-work-time">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -13161,7 +13100,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     d="M10 0C4.48578 0 0 4.48578 0 10C0 15.5142 4.48578 20 10 20C15.5142 20 20 15.5142 20 10C20 4.48578 15.5142 0 10 0ZM14.7559 15.1724C14.5934 15.3349 14.38 15.4167 14.1667 15.4167C13.9534 15.4167 13.7399 15.3349 13.5776 15.1724L9.41086 11.0059C9.25415 10.8501 9.16672 10.6383 9.16672 10.4167V5C9.16672 4.53918 9.53995 4.16672 10 4.16672C10.4601 4.16672 10.8333 4.53918 10.8333 5V10.0717L14.7559 13.9941C15.0816 14.3201 15.0816 14.8466 14.7559 15.1724Z"
                                     fill="#31B939"></path>
                             </svg>
-                            <p>Пн-Пт: 9:00 - 18:00</p>
+                            <p>Пн-Пт: 9:00 - 21:00</p>
                         </div>
                         <div class="contacts__info-phones">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -13171,7 +13110,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     fill="white"></path>
                             </svg>
                             <p>
-                                <a href="tel:+7 (968) 300-20-18">+7 (968) 300-20-18</a>
+                                <a href="tel:+79676126055">+7 (967) 612-60-55</a>
                             </p>
                         </div>
                         <div class="contacts__info-email">
@@ -13190,7 +13129,8 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                     d="M12.9296 10.8281L12.0713 11.6864C10.9291 12.8286 9.07065 12.8286 7.92851 11.6864L7.07022 10.8281L1.00464 16.8546C1.23382 16.9643 1.48714 17.0308 1.75772 17.0308H18.2421C18.5127 17.0308 18.766 16.9643 18.9952 16.8546L12.9296 10.8281Z"
                                     fill="#31B939"></path>
                             </svg>
-                            <p><a href="mailto:info@naremonte.ru">info@naremonte.ru</a>
+                            <p>
+                                <a href="mailto:vektorremonta24@yandex.ru">vektorremonta24@yandex.ru</a>
                             </p>
                         </div>
                     </div>
@@ -13204,14 +13144,14 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                         src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/viber.png"
                                         alt=""></noscript>
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://wa.me/+79676126055" target="_blank">
                                 <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                     alt=""
                                     data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/whats-app-1.png"><noscript><img
                                         src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/whats-app-1.png"
                                         alt=""></noscript>
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://t.me/+79676126055" target="_blank">
                                 <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                     alt=""
                                     data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/telegram.png"><noscript><img
@@ -13237,7 +13177,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                                         src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/instagram.png"
                                         alt=""></noscript>
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://vk.com/krskremontkvartir" target="_blank">
                                 <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                                     alt=""
                                     data-lazy-src="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2022/11/vk.png"><noscript><img
@@ -13253,13 +13193,11 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 <div class="contacts__address">
                     <p>
                         Адрес офиса <a
-                            href="https://yandex.ru/maps/?um=constructor%3A9214e042dd2d33dd277b848947de6b52c98f7f265e53f4f3fc95b98f16aa44ae&amp;source=constructorLink"
+                            href="https://yandex.ru/maps/?um=constructor%3A565ce627791b634e08d20b76c329b3c402b06aa479ed9bb262e6643a4f4a8ba4&source=constructorLink"
                             target="_blank" class="md-line-dotted">Посмотреть схему прохода</a>
                     </p>
                     <div class="map-container">
-                        <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A9214e042dd2d33dd277b848947de6b52c98f7f265e53f4f3fc95b98f16aa44ae&amp;source=constructor"
-                            frameborder="0"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aab70fad91343270d675a5c93a87783c8b4119d0119549a5c28d6ff3e18415179&amp;source=constructor" width="740" height="400" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -13277,10 +13215,7 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                 <div class="footer__bottom-item">
                     <p><span class="md-line-dotted" popupopen="politika-popup">Политика конфиденциальности</span></p>
                 </div>
-                <div class="footer__bottom-item">
-                    <p>Сделано с любовью в <a href="https://paradigma.website/" target="_blank"
-                            class="md-line-dotted">Paradigma.website</a></p>
-                </div>
+                
             </div>
         </div>
     </footer>
@@ -13315,10 +13250,6 @@ full" id="quiz" formvalidate_js="" data-thanks="" novalidate="novalidate">
                         получившим доступ к персональным данным лицом требование не допускать их распространения без
                         согласия субъекта персональных данных<br>
                         или наличия иного законного основания.</p>
-                    <p>1.1.5. «Сайт » — это совокупность связанных между собой веб-страниц, размещенных в сети Интернет
-                        по уникальному адресу (URL): <a
-                            href="https://constructor.paradigma.website/">https://constructor.paradigma.website/</a>, а
-                        также его субдоменах.</p>
                     <p>1.1.6. «Субдомены» — это страницы или совокупность страниц, расположенные на доменах третьего
                         уровня, принадлежащие сайту , а также другие временные страницы, внизу который указана
                         контактная информация Администрации</p>
