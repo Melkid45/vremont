@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Статьи</title>
+    <title>Вектор ремонта</title>
     <style id="perfmatters-used-css">
         :where(.wp-block-button__link) {
             border-radius: 9999px;
@@ -1216,10 +1216,12 @@
             position: relative;
             margin-bottom: 3.3854166667vw;
         }
+
         .filters__slider {
             margin-bottom: 2.8125vw;
             max-height: 80px;
         }
+
         .filters__slider .swiper-container {
             min-height: 4.1666666667vw;
         }
@@ -1265,6 +1267,10 @@
         .filters__slider .filters-item.active {
             color: #fff;
             background-color: var(--main-color);
+        }
+
+        .filters__content .portfolio__container {
+            margin-bottom: 0;
         }
 
         .md-standart-slider {
@@ -1740,152 +1746,6 @@
             background-repeat: no-repeat !important;
         }
 
-        .articles {
-            margin-bottom: 4.1666666667vw;
-        }
-
-        .articles__title {
-            margin-bottom: 1.0416666667vw;
-        }
-
-        .articles__container {
-            width: 100%;
-        }
-
-        .articles__container .container-flex {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin: -1.0416666667vw -.9114583333vw;
-        }
-
-        .articles__item {
-            width: 25.0416666667vw;
-            min-height: 20.8333333333vw;
-            margin: 1.0416666667vw .9114583333vw;
-            position: relative;
-            border-radius: var(--brad-regular);
-            padding: 2.6041666667vw;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: start;
-            -ms-flex-align: start;
-            align-items: flex-start;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-            overflow: hidden;
-        }
-
-        .articles__item::after,
-        .articles__item::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 2;
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(43.5%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .79)));
-            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 43.5%, rgba(0, 0, 0, .79) 100%);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.5%, rgba(0, 0, 0, .79) 100%);
-            -webkit-transition: .3s;
-            transition: .3s;
-            border-radius: var(--brad-regular);
-        }
-
-        .articles__item::before {
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(22.13%, var(--gradient-articles-item)), to(rgba(0, 0, 0, .89)));
-            background: -webkit-linear-gradient(top, var(--gradient-articles-item) 22.13%, rgba(0, 0, 0, .89) 100%);
-            background: linear-gradient(180deg, var(--gradient-articles-item) 22.13%, rgba(0, 0, 0, .89) 100%);
-            opacity: 0;
-        }
-
-        .articles__item:hover::after {
-            opacity: 0;
-        }
-
-        .articles__item:hover::before {
-            opacity: .6;
-        }
-
-        .articles__item .item-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-        }
-
-        .articles__item .item-title {
-            font-weight: 700;
-            font-size: 1.25vw;
-            line-height: 1.6145833333vw;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            letter-spacing: .03em;
-            color: #fff;
-            position: relative;
-            z-index: 5;
-            margin-bottom: .78125vw;
-        }
-
-        .articles__item .item-link div {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            position: relative;
-            z-index: 5;
-            font-weight: 600;
-            font-size: .8333333333vw;
-            line-height: .5208333333vw;
-            letter-spacing: .04em;
-            color: var(--main-color);
-        }
-
-        .articles__item .item-link div span {
-            -webkit-transition: .3s;
-            transition: .3s;
-            margin-right: .5208333333vw;
-        }
-
-        .articles__item .item-link div img,
-        .articles__item .item-link div svg {
-            width: .9895833333vw;
-            height: .9895833333vw;
-            -o-object-fit: cover;
-            object-fit: cover;
-            fill: var(--main-color);
-        }
-
-        .articles__item .item-link div img path,
-        .articles__item .item-link div svg path {
-            fill: var(--main-color);
-        }
-
-        .articles__item .item-link div:hover span {
-            margin-right: .78125vw;
-        }
-
         .calc-banner {
             margin-bottom: 4.1666666667vw;
         }
@@ -2127,7 +1987,9 @@
             justify-content: space-between;
             color: var(--text-main-color);
         }
-
+        .header__logo a img{
+            width: 2.5vw !important;
+        }
         .header__logo a img,
         .header__logo a svg {
             fill: var(--main-color);
@@ -2795,29 +2657,118 @@
             right: 1.5625vw;
         }
 
-        .simple-text {
+        .portfolio {
+            position: relative;
             padding-bottom: 4vw;
             padding-top: 4vw;
         }
 
-        .simple-text__content {
-            margin-top: 1.9vw;
-            height: 4.84375vw;
-            font-weight: 400;
-            font-size: .9375vw;
-            line-height: 1.4583333333vw;
-            letter-spacing: .03em;
-            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0, 0, 0, 0)));
-            background: -webkit-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0) 100%);
-            background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            text-fill-color: transparent;
-            margin-bottom: 2.0833333333vw;
+        .portfolio__title {
+            margin-bottom: 1.0416666667vw;
+        }
+
+        .portfolio__container {
+            margin-bottom: 3.90625vw;
+        }
+
+        .portfolio__container .container-flex {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            gap: .3020833333vw .823vw;
+        }
+
+        .filters__content .portfolio__container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0;
+            gap: 1.56vw;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .portfolio__container {
+                flex-direction: column;
+            }
+        }
+
+        .portfolio__item {
+            width: 26.0416666667vw;
+            margin-top: 3.3854166667vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        .portfolio__item:nth-child(1),
+        .portfolio__item:nth-child(2),
+        .portfolio__item:nth-child(3) {
+            margin-top: 0;
+        }
+
+        .portfolio__item:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
+        .portfolio__item .item-gallery {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-bottom: 1.8229166667vw;
+            position: relative;
+        }
+
+        .portfolio__item .item-gallery a {
+            width: 5.9895833333vw;
+            height: 5.0520833333vw;
+            border-radius: var(--brad-regular);
+            margin-right: .625vw;
             overflow: hidden;
         }
 
-        .simple-text__bottom {
+        .portfolio__item .item-gallery a .video {
+            display: none;
+        }
+
+        .portfolio__item .item-gallery a img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .portfolio__item .item-gallery a:first-child {
+            width: 26.0416666667vw;
+            height: 20.8333333333vw;
+            border-radius: var(--brad-regular);
+            overflow: hidden;
+            margin-right: 0;
+            margin-bottom: .8333333333vw;
+            position: relative;
+        }
+
+        .portfolio__item .item-gallery a:first-child .video {
+            width: 3.125vw;
+            height: 3.125vw;
+            position: absolute;
+            z-index: 2;
+            top: 1.1979166667vw;
+            right: 1.1979166667vw;
+            border-radius: 50%;
+            background-color: var(--main-color);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2829,77 +2780,135 @@
             justify-content: center;
         }
 
-        .simple-text__content a {
+        .portfolio__item .item-gallery a:first-child .video::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background-color: var(--main-color);
+            -webkit-animation: pulse_2_small 2s linear infinite;
+            animation: pulse_2_small 2s linear infinite;
+            z-index: -1;
+        }
+
+        .portfolio__item .item-gallery a:first-child .video img,
+        .portfolio__item .item-gallery a:first-child .video svg {
+            width: .6088541667vw;
+            height: .6755208333vw;
+            -o-object-fit: cover;
+            object-fit: cover;
+            fill: #fff;
+        }
+
+        .portfolio__item .item-gallery a:first-child .video img path,
+        .portfolio__item .item-gallery a:first-child .video svg path {
+            fill: #fff;
+        }
+
+        .portfolio__item .item-gallery a:nth-child(1n+6) {
+            display: none;
+        }
+
+        .portfolio__item .item-gallery a:nth-child(3) {
+            margin-right: .6770833333vw;
+        }
+
+        .portfolio__item .item-gallery a:nth-child(5) {
+            margin-right: 0;
+        }
+
+        .portfolio__item .item-gallery__hint {
+            position: absolute;
+            top: 1.1979166667vw;
+            left: 1.1979166667vw;
+            font-weight: 600;
+            font-size: .8333333333vw;
+            line-height: 1.7708333333vw;
+            letter-spacing: .04em;
+            color: #fff;
+            background-color: var(--main-color);
+            height: 1.7708333333vw;
+            padding: 0 .625vw;
+            border-radius: var(--brad-regular);
+            z-index: 5;
+        }
+
+        .portfolio__item .item-gallery__hint span {
+            font-family: "inter", Arial, sans-serif;
+        }
+
+        .portfolio__item .item-gallery__hint.hidden {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        .portfolio__item .item-title {
+            font-weight: 700;
+            font-size: 1.5625vw;
+            line-height: 2.1875vw;
+            letter-spacing: .03em;
+            margin-bottom: .7291666667vw;
+            color: var(--text-main-color);
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+
+        .portfolio__item .item-title:hover {
             color: var(--main-color);
         }
 
-        .simple-text__content ul {
-            padding-left: 1vw;
+        .portfolio__item .item-text {
+            font-weight: 400;
+            font-size: .7291666667vw;
+            line-height: 1.1458333333vw;
+            letter-spacing: .03em;
+            color: #8a8a8a;
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            margin-bottom: .78125vw;
         }
 
-        .simple-text__content h1,
-        .simple-text__content h2,
-        .simple-text__content h3,
-        .simple-text__content h4,
-        .simple-text__content h5,
-        .simple-text__content h6,
-        .simple-text__content p,
-        .simple-text__content ul,
-        .simple-text__content ol {
-            margin-bottom: 1.0416666667vw;
-        }
-
-        .simple-text__content h1:last-child,
-        .simple-text__content h2:last-child,
-        .simple-text__content h3:last-child,
-        .simple-text__content h4:last-child,
-        .simple-text__content h5:last-child,
-        .simple-text__content h6:last-child,
-        .simple-text__content p:last-child,
-        .simple-text__content ul:last-child,
-        .simple-text__content ol:last-child {
-            margin-bottom: 0;
-        }
-
-        .simple-text__btn {
+        .portfolio__item .item-btn {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+        }
+
+        .portfolio__item .item-btn span {
             font-weight: 600;
             font-size: .8333333333vw;
             line-height: .5208333333vw;
             letter-spacing: .04em;
-            color: #adadad;
-            padding-bottom: .15625vw;
-        }
-
-        .simple-text__btn::after {
-            border-color: #adadad !important;
-        }
-
-        .simple-text__btn:hover img,
-        .simple-text__btn:hover svg {
-            -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-        }
-
-        .simple-text__btn img,
-        .simple-text__btn svg {
-            width: .9895833333vw;
-            height: .9895833333vw;
-            -o-object-fit: cover;
-            object-fit: cover;
-            fill: #adadad;
+            color: var(--main-color);
+            margin-right: .2604166667vw;
             -webkit-transition: .3s;
             transition: .3s;
         }
 
-        .simple-text__btn img path,
-        .simple-text__btn svg path {
-            fill: #adadad;
+        .portfolio__item .item-btn img,
+        .portfolio__item .item-btn svg {
+            width: .9895833333vw;
+            height: .9895833333vw;
+            -o-object-fit: cover;
+            object-fit: cover;
+            fill: var(--main-color);
+        }
+
+        .portfolio__item .item-btn img path,
+        .portfolio__item .item-btn svg path {
+            fill: var(--main-color);
+        }
+
+        .portfolio__item .item-btn:hover span {
+            margin-right: .5208333333vw;
         }
 
         .to-top {
@@ -2949,7 +2958,9 @@
             .wrapper {
                 width: 86.25vw;
             }
-
+            .header__tel{
+                display: none;
+            }
             body {
                 overflow-x: hidden;
                 padding-top: 25vw;
@@ -3169,8 +3180,13 @@
                 height: 18.75vw;
             }
 
+            .filters {
+                max-height: 80px;
+            }
+
             .filters__slider {
                 margin-bottom: 2.8125vw;
+                max-height: 80px;
             }
 
             .filters__slider .swiper-container {
@@ -3187,6 +3203,7 @@
                 padding: 1.5625vw 4.6875vw;
                 font-size: 2.5vw;
                 line-height: 2.8125vw;
+                max-height: none;
                 max-height: 10vw;
             }
 
@@ -3258,12 +3275,12 @@
             }
 
             .header__logo {
-                width: auto !important;
+                width: 23.4375vw;
             }
 
             .header__logo a img,
             .header__logo a svg {
-                width: 25.5vw;
+                width: 7.5vw !important;
                 height: 7.625vw;
             }
 
@@ -3474,31 +3491,108 @@
                 margin-bottom: 5.302083vw;
             }
 
-            .simple-text {
-                padding-bottom: 10.9375vw;
+            .portfolio {
+                padding-bottom: 18.75vw;
             }
 
-            .simple-text__content {
-                width: 100%;
-                height: 25vw;
-                text-align: justify;
-                font-size: 3.125vw;
-                line-height: 5.625vw;
+            .portfolio__container .container-flex {}
+
+            .portfolio__container .portfolio__item {
+                margin: 4.6875vw 0;
+            }
+
+            .portfolio__title {
                 margin-bottom: 4.6875vw;
             }
 
-            .simple-text__btn span {
-                font-size: 3.125vw;
-                line-height: 3.125vw;
-                margin-right: .9375vw;
-                margin-bottom: .9375vw;
+            .portfolio__item {
+                width: 86.25vw;
+                -webkit-box-align: flex-start;
+                -ms-flex-align: flex-start;
+                align-items: flex-start;
             }
 
-            .simple-text__btn img,
-            .simple-text__btn svg {
+            .portfolio__item .item-title {
+                font-size: 5vw;
+                line-height: 6.25vw;
+                margin-bottom: 3.125vw;
+            }
+
+            .portfolio__item .item-text {
+                font-size: 3.125vw;
+                line-height: 4.6875vw;
+                margin-bottom: 3.125vw;
+                text-align: left;
+            }
+
+            .portfolio__item .item-btn {
+                margin-bottom: 1.5625vw;
+                padding-bottom: .625vw;
+            }
+
+            .portfolio__item .item-btn span {
+                font-size: 3.125vw;
+                margin-right: 1.5625vw;
+            }
+
+            .portfolio__item .item-btn:hover span {
+                margin-right: 1.5625vw;
+            }
+
+            .portfolio__item .item-btn img,
+            .portfolio__item .item-btn svg {
                 width: 3.125vw;
                 height: 3.125vw;
-                margin-bottom: .9375vw;
+            }
+
+            .portfolio__item .item-gallery {
+                width: 100%;
+                margin-bottom: 4.6875vw;
+            }
+
+            .portfolio__item .item-gallery a {
+                width: 19.6875vw;
+                height: 16.5625vw;
+                border-radius: var(--brad-regular);
+                margin-right: 2.5vw;
+            }
+
+            .portfolio__item .item-gallery a:first-child {
+                width: 100%;
+                height: 69.0625vw;
+                border-radius: var(--brad-regular);
+                margin-right: 0;
+                margin-bottom: 2.5vw;
+            }
+
+            .portfolio__item .item-gallery a:first-child .video {
+                width: 10.9375vw;
+                height: 10.9375vw;
+                top: 5.625vw;
+                right: 5.625vw;
+            }
+
+            .portfolio__item .item-gallery a:first-child .video img,
+            .portfolio__item .item-gallery a:first-child .video svg {
+                width: 2.1875vw;
+                height: 2.5vw;
+            }
+
+            .portfolio__item .item-gallery a:nth-child(3) {
+                margin-right: 2.5vw;
+            }
+
+            .portfolio__item .item-gallery a:nth-child(5) {
+                margin-right: 0;
+            }
+
+            .portfolio__item .item-gallery__hint {
+                font-size: 2.5vw;
+                height: 6.875vw;
+                line-height: 6.875vw;
+                top: 3.125vw;
+                left: 4.6875vw;
+                padding: 0 3.125vw;
             }
 
             .footer__bottom {
@@ -3579,49 +3673,6 @@
                 top: auto;
                 left: -13.75vw;
                 bottom: -1.25vw;
-            }
-
-            .articles {
-                margin-bottom: 10.9375vw;
-            }
-
-            .articles__title {
-                margin-bottom: 3.125vw;
-            }
-
-            .articles__item {
-                margin: 3.125vw 0;
-                width: 100%;
-                min-height: 78.125vw;
-                border-radius: var(--brad-regular);
-                padding: 9.375vw 10.9375vw;
-            }
-
-            .articles__item::after,
-            .articles__item::before {
-                border-radius: var(--brad-regular);
-            }
-
-            .articles__item .item-title {
-                font-size: 4.375vw;
-                line-height: 5.625vw;
-                margin-bottom: 3.125vw;
-            }
-
-            .articles__item .item-link div span {
-                font-size: 3.125vw;
-                line-height: 3.125vw;
-                margin-right: 1.5625vw;
-            }
-
-            .articles__item .item-link div img,
-            .articles__item .item-link div svg {
-                width: 3.125vw;
-                height: 3.125vw;
-            }
-
-            .articles__item .item-link div:hover span {
-                margin-right: 1.5625vw;
             }
 
             .to-top {
@@ -3767,6 +3818,7 @@
             margin: 5px 0 0 0;
             text-align: left;
             line-height: 1.5;
+            font-size: 12rem;
         }
 
         #cookie_notification .btn-primary {
@@ -3831,15 +3883,15 @@
     <meta name="robots" content="noindex, nofollow">
 
     <!-- This site is optimized with the Yoast SEO plugin v22.9 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Статьи</title>
+    <title>2-х комнатная</title>
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Статьи">
-    <meta property="og:url" content="https://alex-dein.ru/portfolio/vremonte/blog/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="2-х комнатная">
+    <meta property="og:url" content="https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/">
     <meta property="og:site_name" content="Vremont">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json"
-        class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://alex-dein.ru/portfolio/vremonte/blog/","url":"https://alex-dein.ru/portfolio/vremonte/blog/","name":"Статьи","isPartOf":{"@id":"https://alex-dein.ru/portfolio/vremonte/#website"},"primaryImageOfPage":{"@id":"https://alex-dein.ru/portfolio/vremonte/blog/#primaryimage"},"image":{"@id":"https://alex-dein.ru/portfolio/vremonte/blog/#primaryimage"},"thumbnailUrl":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-2.jpg","inLanguage":"ru-RU"},{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://alex-dein.ru/portfolio/vremonte/blog/#primaryimage","url":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-2.jpg","contentUrl":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/reason-2.jpg","width":870,"height":400},{"@type":"WebSite","@id":"https://alex-dein.ru/portfolio/vremonte/#website","url":"https://alex-dein.ru/portfolio/vremonte/","name":"Vremont","description":"Ремонт квартир и домов под ключ в Сочи","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://alex-dein.ru/portfolio/vremonte/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"}]}</script>
+        class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/","url":"https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/","name":"2-х комнатная","isPartOf":{"@id":"https://alex-dein.ru/portfolio/vremonte/#website"},"primaryImageOfPage":{"@id":"https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/#primaryimage"},"image":{"@id":"https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/#primaryimage"},"thumbnailUrl":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/1-1.jpg","inLanguage":"ru-RU"},{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://alex-dein.ru/portfolio/vremonte/portfolios/2-h-komnatnaya/#primaryimage","url":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/1-1.jpg","contentUrl":"https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/1-1.jpg","width":770,"height":508},{"@type":"WebSite","@id":"https://alex-dein.ru/portfolio/vremonte/#website","url":"https://alex-dein.ru/portfolio/vremonte/","name":"Vremont","description":"Ремонт квартир и домов под ключ в Сочи","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://alex-dein.ru/portfolio/vremonte/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"}]}</script>
     <!-- / Yoast SEO plugin. -->
 
 
@@ -3868,8 +3920,7 @@
     </style>
     <link rel="stylesheet" id="wp-block-library-css"
         data-pmdelayedstyle="https://alex-dein.ru/portfolio/vremonte/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1"
-        type="text/css" media="all"
-        href="https://alex-dein.ru/portfolio/vremonte/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1">
+        type="text/css" media="all">
     <style id="classic-theme-styles-inline-css" type="text/css">
         /*! This file is auto-generated */
         .wp-block-button__link {
@@ -4215,12 +4266,13 @@
     </style>
     <link rel="stylesheet" id="style-css"
         data-pmdelayedstyle="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/css/main.css?ver=6.6.1"
-        type="text/css" media="all"
-        href="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/css/main.css?ver=6.6.1">
+        type="text/css" media="all">
     <link rel="stylesheet" id="fancybox-css"
         data-pmdelayedstyle="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?ver=6.6.1" type="text/css"
-        media="all" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?ver=6.6.1">
+        media="all">
     <link rel="https://api.w.org/" href="https://alex-dein.ru/portfolio/vremonte/wp-json/">
+    <link rel="alternate" title="JSON" type="application/json"
+        href="https://alex-dein.ru/portfolio/vremonte/wp-json/wp/v2/portfolio-cat/38">
     <link rel="icon" href="https://alex-dein.ru/portfolio/vremonte/wp-content/uploads/2024/07/cropped-vremont-32x32.png"
         sizes="32x32">
     <link rel="icon"
@@ -5287,11 +5339,37 @@
                 box-shadow: 0 0 100px rgb(198 198 198 / 37%);
             }
         }
+
+        .swiper-wrapper {
+            height: -webkit-fill-available !important;
+        }
+
+        .swiper-container {
+            height: -webkit-fill-available !important;
+        }
+        .header__tel{
+            font-family: "Inter", Arial, serif;
+            font-weight: 600;
+            font-size: 1.26666667vw;
+            line-height: 1.3541666667vw;
+            color: var(--text-main-color);
+            margin-bottom: 0.15625vw;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            margin-right: -9vw;
+            margin-top: 0.7vw
+        }
+        .header__tel:hover{
+            color: #0086DB;
+        }
     </style>
 
     <script src="https://alex-dein.ru/portfolio/vremonte/wp-includes/js/wp-emoji-release.min.js?ver=6.6.1"
         defer=""></script>
-        <link rel="stylesheet" href="css/phone.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="page">
@@ -5302,9 +5380,9 @@
             <div class="wrapper">
 
                 <div class="header__logo">
-                    <a href="index.html">
-                        <img src="logo.svg" alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
-                                src="logo.svg" alt=""></noscript>
+                    <a href="../index.html">
+                        <img src="../logo.svg" alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                src="../logo.svg" alt=""></noscript>
 
                     </a>
                 </div>
@@ -5367,26 +5445,26 @@
 
                     <div class="menu-menyu-v-shapke-container">
                         <ul class="nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a><span></span></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">О нас</a><span></span></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a><span></span></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a><span></span></li>
+                            <li class="nav-item"><a class="nav-link" href="../about.html">О нас</a><span></span></li>
+                            <li class="nav-item"><a class="nav-link" href="../services.html">Услуги</a><span></span></li>
                             <li class="nav-item  dropdown-item  nav-item--active-ancestor  nav-item--active-parent"><a
-                                    class="nav-link" href="portfolio.html">Портфолио</a><span></span>
+                                    class="nav-link" href="#">Портфолио</a><span></span>
                                 <ul class="nav-menu  nav-menu--level-1">
                                     <li class="nav-item  dropdown-item  nav-item--active">
-                                        <a class="nav-link" href="1.html" aria-current="page">
+                                        <a class="nav-link" href="../1.html" aria-current="page">
                                             1-а комнатная квартира
                                         </a>
                                         <span></span>
                                     </li>
                                     <li class="nav-item  dropdown-item  nav-item--active">
-                                        <a class="nav-link" href="2.html" aria-current="page">
+                                        <a class="nav-link" href="../2.html" aria-current="page">
                                             2-х комнатная квартира
                                         </a>
                                         <span></span>
                                     </li>
                                     <li class="nav-item  dropdown-item  nav-item--active">
-                                        <a class="nav-link" href="3.html" aria-current="page">
+                                        <a class="nav-link" href="../3.html" aria-current="page">
                                             3-х комнатная квартира
                                         </a>
                                         <span></span>
@@ -5395,16 +5473,16 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a><span></span></li>
                             <li class="nav-item  dropdown-item  nav-item--active-ancestor  nav-item--active-parent"><a
-                                    class="nav-link" href="blog.html">Статьи</a><span></span>
+                                    class="nav-link" href="../blog.html">Статьи</a><span></span>
                                 <ul class="nav-menu  nav-menu--level-1">
                                     <li class="nav-item  dropdown-item  nav-item--active"><a class="nav-link"
-                                            href="inter.html" aria-current="page">Интерьер</a><span></span>
+                                            href="../inter.html" aria-current="page">Интерьер</a><span></span>
                                     </li>
                                     <li class="nav-item  dropdown-item  nav-item--active"><a class="nav-link"
-                                            href="sov.html" aria-current="page">Советы по ремонту</a><span></span>
+                                            href="../sov.html" aria-current="page">Советы по ремонту</a><span></span>
                                     </li>
                                     <li class="nav-item  dropdown-item  nav-item--active"><a class="nav-link"
-                                            href="plan.html" aria-current="page">Планирование ремонта</a><span></span>
+                                            href="../plan.html" aria-current="page">Планирование ремонта</a><span></span>
                                     </li>
                                 </ul>
                             </li>
@@ -5416,121 +5494,307 @@
         </nav>
     </header>
 
-
-    <section class="articles">
-        <div class="wrapper">
-            <h1 class="articles__title md-main-title"><b>Полезные статьи и новости</b></h1>
-
-            <div class="filters">
-                <div class="filters__slider md-standart-slider" filtersslider_js="">
-                    <div class="slider-hint">
-                        <span>Листайте влево/вправо</span>
-                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11.7603 5.82319C11.5048 5.82319 11.2697 5.9028 11.0724 6.03549C10.904 5.54602 10.4425 5.19514 9.90269 5.19514C9.64728 5.19514 9.41218 5.27475 9.21482 5.40744C9.04647 4.91797 8.58499 4.56708 8.04514 4.56708C7.81875 4.56708 7.60687 4.629 7.42692 4.73515V2.67702C7.42692 1.9841 6.87255 1.41797 6.18758 1.41797C5.5026 1.41797 4.94824 1.98115 4.94824 2.67702V8.02285L3.87143 7.20314C3.2329 6.71662 2.32734 6.78149 1.76136 7.35647C1.39856 7.72504 1.39856 8.32361 1.76136 8.68924L6.17016 13.1682C6.6955 13.7019 7.39789 13.9967 8.14092 13.9967H9.59213C11.47 13.9967 12.9967 12.4458 12.9967 10.538V7.0793C12.9996 6.38637 12.4423 5.82319 11.7603 5.82319ZM12.3785 10.541C12.3785 12.1008 11.1275 13.3716 9.59213 13.3716H8.14092C7.56043 13.3716 7.01767 13.1416 6.60843 12.7259L2.19963 8.24695C2.07773 8.12311 2.07773 7.92555 2.19963 7.80171C2.39119 7.6071 2.6466 7.50685 2.90492 7.50685C3.1139 7.50685 3.32577 7.57172 3.49992 7.70735L5.07014 8.90449C5.16302 8.97525 5.29072 8.98705 5.39521 8.93397C5.4997 8.8809 5.56645 8.7718 5.56645 8.65385V2.67702C5.56645 2.32909 5.84509 2.04897 6.18467 2.04897C6.52426 2.04897 6.80289 2.33204 6.80289 2.67702V7.3948C6.80289 7.56877 6.94221 7.7103 7.11345 7.7103C7.2847 7.7103 7.42401 7.56877 7.42401 7.3948V5.82319C7.42401 5.47525 7.70265 5.19514 8.04223 5.19514C8.38182 5.19514 8.66045 5.4782 8.66045 5.82319V7.3948C8.66045 7.56877 8.79977 7.7103 8.97101 7.7103C9.14226 7.7103 9.28157 7.56877 9.28157 7.3948V6.45124C9.28157 6.10331 9.56021 5.82319 9.89979 5.82319C10.2394 5.82319 10.518 6.10626 10.518 6.45124V7.3948C10.518 7.56877 10.6573 7.7103 10.8286 7.7103C10.9998 7.7103 11.1391 7.56877 11.1391 7.3948V7.0793C11.1391 6.73136 11.4178 6.45124 11.7573 6.45124C12.0969 6.45124 12.3756 6.73431 12.3756 7.0793L12.3785 10.541Z"
-                                fill="#1C1C1C"></path>
-                            <path
-                                d="M11.3053 2.21146L12.3705 1.10573L11.3053 0L11.1573 0.153328L11.97 0.99663H8.0459V1.21483H11.97L11.1573 2.05813L11.3053 2.21146Z"
-                                fill="#31B939"></path>
-                            <path
-                                d="M1.06519 0L0 1.10573L1.06519 2.21146L1.21322 2.05813L0.400536 1.21483H4.32463V0.99663H0.400536L1.21322 0.153328L1.06519 0Z"
-                                fill="#31B939"></path>
-                        </svg>
-                    </div>
-                    <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide " style="width: 176.6px; margin-right: 4px;">
-                                <a href="blog.html"
-                                    class="filters-item ">Все</a>
-                            </div>
-                            <div class="swiper-slide swiper-slide-active" style="width: 176.6px; margin-right: 4px;">
-                                <a href="inter.html"
-                                    class="filters-item active">Интерьер</a>
-                            </div>
-                            <div class="swiper-slide swiper-slide-next" style="width: 176.6px; margin-right: 4px;">
-                                <a href="sov.html"
-                                    class="filters-item">Советы по ремонту</a>
-                            </div>
-                            <div class="swiper-slide" style="width: 176.6px; margin-right: 4px;">
-                                <a href="plan.html"
-                                    class="filters-item">Планирование ремонта</a>
-                            </div>
-
-                        </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    </div>
-                    <div class="slider-prev-btn slider-btn swiper-button-disabled" tabindex="0" role="button"
-                        aria-label="Previous slide" aria-disabled="true">
-                        <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/slider-prev.svg"
-                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
-                                src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/slider-prev.svg"
-                                alt=""></noscript>
-                    </div>
-                    <div class="slider-next-btn slider-btn swiper-button-disabled" tabindex="0" role="button"
-                        aria-label="Next slide" aria-disabled="true">
-                        <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/slider-next.svg"
-                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
-                                src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/slider-next.svg"
-                                alt=""></noscript>
+    <section class="case">
+        <div class="container">
+            <div class="case__body">
+                <h1 class="case__body-title">
+                    Ремонт однокомнатной квартиры 27,5 м2
+                </h1>
+                <div class="case__body-block">
+                    <img class="case__body-block-img" src="img/1.png" alt="">
+                    <div class="case__body-block-images">
+                        <img src="img/2.png" alt="">
+                        <img src="img/3.png" alt="">
+                        <img src="img/4.png" alt="">
+                        <img src="img/5.png" alt="">
                     </div>
                 </div>
-                <div class="filters__content">
-                    <div class="articles__container">
-                        <div class="container-flex">
+                <div class="case__body-desc">
+                    <span>Выполнили ремонт однокомнатной квартиры в ЖК Серебряный в Красноярске.</span>
+                    <p>
+                        Объект: г. Красноярск, ул. Лесопарковая, д. 33<br>
+                        Площадь квартиры: 27,5 м2 <br>
+                        Заказчики приобрели однокомнатную квартиру в новом жилищном комплексе в Октябрьском районе и обратились в нашу компанию по ремонту. Нашей задачей было сделать качественный комплексный ремонт.
+                        <br><br>
+                        Зачистили стены до основания, демонтировали натяжной потолок и напольное покрытие от застройщика.
+                        <br>
+                        Добавили новые розетки и перенесли выключатели.
+                        <br>
+                        В комнате и коридоре производили оштукатуривание стен под правило, грунтование поверхности стен, нанесли шпаклевку в 2 слоя. В кухне стены выравнивались штукатуркой под маяки с армированием сеткой «строби», нанесена шпаклевки и поклеен «стеклохолст».
+                        <br>
+                        Выполнили поклейку обоев в коридоре и гостиной, на кухне окрасили стены, нанесли декоративную штукатурку матовый шелк. Фартук сделан из плитки кабанчик. По просьбе Заказчиков уложили линолеум от застройщика и произвели монтаж нового напольного плинтуса. Сделали монтаж натяжного потолка с установкой точечных светильников.
+                        <br>
+                        Производились сантехнические работы, монтаж коробов из ВГКЛ, выравнивание стен и пола, укладка плитки (пол, стены), установка ванны, мойдодыра, унитаза, подключение стиральной машинки.
+                        <br>
 
-                            <a href="sovet/1.html"
-                                class="articles__item">
-                                <img src="images/blog/1.jpg"
-                                    alt="" class="item-img lazyloaded" data-ll-status="loaded"><noscript><img
-                                        src="images/blog/1.jpg"
-                                        alt="" class="item-img"></noscript>
-                                <div class="item-title">Интерьер квартиры для человека профессия-природа</div>
-                                <div class="item-link">
-                                    <div class="md-line-dotted">
-                                        <span>Смотреть подробнее</span>
-                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17.1646 8.3086L0.884766 8.30859L0.884766 10.0781L17.1646 10.0781L17.1646 8.3086Z"
-                                                fill="#31B939"></path>
-                                            <path
-                                                d="M14.0596 13.5751L12.8083 12.3238L15.9115 9.22063L12.8083 6.11748L14.0596 4.86621L18.414 9.22063L14.0596 13.5751Z"
-                                                fill="#31B939"></path>
-                                        </svg>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="before">
+        <div class="container">
+            <div class="before__body">
+                <h2 class="before__body-title">
+                    Фотографии до ремонта
+                </h2>
+                <div id="before" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide before__body-slide">
+                                <img src="img/6.png" alt="">
+                                <img src="img/7.png" alt="">
+                            </li>
+                            <li class="splide__slide before__body-slide">
+                                <img src="img/6.png" alt="">
+                                <img src="img/7.png" alt="">
+                            </li>
+                            <li class="splide__slide before__body-slide">
+                                <img src="img/6.png" alt="">
+                                <img src="img/7.png" alt="">
+                            </li>
+                            <li class="splide__slide before__body-slide">
+                                <img src="img/6.png" alt="">
+                                <img src="img/7.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="../portfolio.html">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.15942 8.3086L18.4393 8.30859V10.0781H2.15942V8.3086Z" fill="#0086DB" />
+                        <path
+                            d="M5.26348 13.5751L6.51475 12.3238L3.4116 9.22063L6.51475 6.11748L5.26348 4.86621L0.909058 9.22063L5.26348 13.5751Z"
+                            fill="#0086DB" />
+                    </svg>
+                    <span>Вернуться в портфолио</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="wrapper">
+            <h1 class="portfolio__title md-main-title"><b>Похожие работы</b></h1>
+            <div class="filters">
+                <div class="filters__content">
+                    <div class="portfolio__container">
+                        <div class="container-flex">
+                            <div class="portfolio__item">
+                                <div class="item-gallery" hiddenimgcontainer_js="5">
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/1.png"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/1.png"
+                                                alt=""></noscript>
+                                        <span href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc" data-fancybox=""
+                                            class="video">
+                                            <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                    src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                    alt=""></noscript>
+                                        </span>
+                                    </a>
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/1/1.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/1/1.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/1/2.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/1/2.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/1/3.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/1/3.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/1/4.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/1/4.jpg"
+                                                alt=""></noscript>
+                                    </a>
+
+                                    <div class="item-gallery__hint hidden" hiddenimghint_js="">
+                                        + <span></span> фото
                                     </div>
                                 </div>
-                            </a>
-                            <a href="sovet/2.html"
-                                class="articles__item">
-                                <img src="images/blog/2.jpg"
-                                    alt="" class="item-img lazyloaded" data-ll-status="loaded"><noscript><img
-                                        src="images/blog/2.jpg"
-                                        alt="" class="item-img"></noscript>
-                                <div class="item-title">Интерьер квартиры для человека профессия-знаки</div>
-                                <div class="item-link">
-                                    <div class="md-line-dotted">
-                                        <span>Смотреть подробнее</span>
-                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17.1646 8.3086L0.884766 8.30859L0.884766 10.0781L17.1646 10.0781L17.1646 8.3086Z"
-                                                fill="#31B939"></path>
-                                            <path
-                                                d="M14.0596 13.5751L12.8083 12.3238L15.9115 9.22063L12.8083 6.11748L14.0596 4.86621L18.414 9.22063L14.0596 13.5751Z"
-                                                fill="#31B939"></path>
-                                        </svg>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-title">
+                                    Ремонт студии в новостройке
+                                </a>
+                                <div class="item-text">
+                                    Объект: г. Красноярск, ул. Лесников 27/1<br>
+                                    Площадь квартиры: 22,8 м2<br>
+                                </div>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-btn md-line-dotted">
+
+                                    <span>Смотреть подробнее</span>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.1646 8.3086L0.884766 8.30859L0.884766 10.0781L17.1646 10.0781L17.1646 8.3086Z"
+                                            fill="#31B939"></path>
+                                        <path
+                                            d="M14.0596 13.5751L12.8083 12.3238L15.9115 9.22063L12.8083 6.11748L14.0596 4.86621L18.414 9.22063L14.0596 13.5751Z"
+                                            fill="#31B939"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <div class="item-gallery" hiddenimgcontainer_js="5">
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/2.png"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/2.png"
+                                                alt=""></noscript>
+                                        <span href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc" data-fancybox=""
+                                            class="video">
+                                            <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                    src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                    alt=""></noscript>
+                                        </span>
+                                    </a>
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/2/1.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/2/1.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/2/2.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/2/2.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/2/3.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/2/3.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/2/4.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/2/4.jpg"
+                                                alt=""></noscript>
+                                    </a>
+
+                                    <div class="item-gallery__hint hidden" hiddenimghint_js="">
+                                        + <span></span> фото
                                     </div>
                                 </div>
-                            </a>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-title">
+                                    Ремонт однокомнатной квартиры
+                                </a>
+                                <div class="item-text">
+                                    Объект: г. Красноярск, ул. Регатная 1<br>
+                                    Площадь квартиры: 40,8 м2<br>
+                                </div>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-btn md-line-dotted">
+
+                                    <span>Смотреть подробнее</span>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.1646 8.3086L0.884766 8.30859L0.884766 10.0781L17.1646 10.0781L17.1646 8.3086Z"
+                                            fill="#31B939"></path>
+                                        <path
+                                            d="M14.0596 13.5751L12.8083 12.3238L15.9115 9.22063L12.8083 6.11748L14.0596 4.86621L18.414 9.22063L14.0596 13.5751Z"
+                                            fill="#31B939"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <div class="item-gallery" hiddenimgcontainer_js="5">
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/3.png"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/3.png"
+                                                alt=""></noscript>
+                                        <span href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc" data-fancybox=""
+                                            class="video">
+                                            <img src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                    src="https://alex-dein.ru/portfolio/vremonte/wp-content/themes/theme/assets/img/general/video-icon.svg"
+                                                    alt=""></noscript>
+                                        </span>
+                                    </a>
+                                    <a href="../case/1.html">
+                                        <img src="../images/case/1x/3/1.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/3/1.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/3/2.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/3/2.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/3/3.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/3/3.jpg"
+                                                alt=""></noscript>
+                                    </a>
+                                    <a href="../case/1.html"
+                                        >
+                                        <img src="../images/case/1x/3/4.jpg"
+                                            alt="" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                                src="../images/case/1x/3/4.jpg"
+                                                alt=""></noscript>
+                                    </a>
+
+                                    <div class="item-gallery__hint hidden" hiddenimghint_js="">
+                                        + <span></span> фото
+                                    </div>
+                                </div>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-title">
+                                    Ремонт однокомнатной квартиры
+                                </a>
+                                <div class="item-text">
+                                    Объект: г. Красноярск, ул. Ленинградская, д. 6б<br>
+                                    Площадь квартиры: 41,1 м2<br>
+                                </div>
+                                <a href="https://youtu.be/ZQ-c_XLlUAU?si=JH2U46uKsnbo1rWc"
+                                    class="item-btn md-line-dotted">
+
+                                    <span>Смотреть подробнее</span>
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.1646 8.3086L0.884766 8.30859L0.884766 10.0781L17.1646 10.0781L17.1646 8.3086Z"
+                                            fill="#31B939"></path>
+                                        <path
+                                            d="M14.0596 13.5751L12.8083 12.3238L15.9115 9.22063L12.8083 6.11748L14.0596 4.86621L18.414 9.22063L14.0596 13.5751Z"
+                                            fill="#31B939"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
     <section class="page-pagination">
     </section>
 
@@ -5547,7 +5811,7 @@
                 <div class="footer__bottom-item">
                     <p><span class="md-line-dotted" popupopen="politika-popup">Политика конфиденциальности</span></p>
                 </div>
-                
+
             </div>
         </div>
     </footer>
@@ -5582,6 +5846,10 @@
                         получившим доступ к персональным данным лицом требование не допускать их распространения без
                         согласия субъекта персональных данных<br>
                         или наличия иного законного основания.</p>
+                    <p>1.1.5. «Сайт » — это совокупность связанных между собой веб-страниц, размещенных в сети Интернет
+                        по уникальному адресу (URL): <a
+                            href="https://constructor.paradigma.website/">https://constructor.paradigma.website/</a>, а
+                        также его субдоменах.</p>
                     <p>1.1.6. «Субдомены» — это страницы или совокупность страниц, расположенные на доменах третьего
                         уровня, принадлежащие сайту , а также другие временные страницы, внизу который указана
                         контактная информация Администрации</p>
@@ -6606,7 +6874,10 @@
 
     <script type="text/javascript"
         id="perfmatters-delayed-styles-js">!function () { const e = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"]; function t() { document.querySelectorAll("link[data-pmdelayedstyle]").forEach(function (e) { e.setAttribute("href", e.getAttribute("data-pmdelayedstyle")) }), e.forEach(function (e) { window.removeEventListener(e, t, { passive: !0 }) }) } e.forEach(function (e) { window.addEventListener(e, t, { passive: !0 }) }) }();</script>
-
+    <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+    <script src="js.js"></script>
 </body>
 
 </html>

@@ -563,6 +563,72 @@
     color: #242424;
 }
 
+.team{
+    width: 100%;
+    padding-top: 150px;
+}
+.team__body{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.team__body-text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+.team__body-text-title{
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 2.5999999046325684px;
+    text-align: center;
+    color: #242424;
+    text-transform: uppercase;
+}
+.team__body-text p{
+    font-family: var(--font-headings);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    color: #242424;
+}
+#team{
+    width: 1570px;
+    padding-bottom: 40px;
+}
+.team__body-slide{
+    width: 1570px !important;
+    display: flex;
+    gap: 38px;
+}
+.team__body-slide img{
+    width: 364px;
+    height: 440px;
+}
+.splide__arrow{
+    width: 64px;
+    height: 64px;
+    background: #0086DB;
+}
+.splide__arrow svg{
+    fill: none;
+    width: 10px;
+    height: 16px;
+}
+.splide__arrow--next{
+    right: -40px;
+}
+.splide__arrow--prev{
+    left: -40px;
+}
+.splide__pagination__page.is-active{
+    background: #0086DB;
+}
+
 @media (max-width:1920px) {
     html{
         font-size: calc(100vw / 1920);
@@ -1133,5 +1199,70 @@
         line-height: 45rem;
         text-align: center;
         color: #242424;
+    }
+    .team{
+        width: 100%;
+        padding-top: 150rem;
+    }
+    .team__body{
+        display: flex;
+        flex-direction: column;
+        gap: 60rem;
+        align-items: center;
+    }
+    .team__body-text{
+        display: flex;
+        flex-direction: column;
+        gap: 32rem;
+        align-items: center;
+    }
+    .team__body-text-title{
+        font-size: 65rem;
+        font-weight: 400;
+        line-height: 80rem;
+        letter-spacing: 2.5999999046325684rem;
+        text-align: center;
+        color: #242424;
+        text-transform: uppercase;
+    }
+    .team__body-text p{
+        font-family: var(--font-headings);
+        font-size: 32rem;
+        font-weight: 400;
+        line-height: 45rem;
+        text-align: center;
+        color: #242424;
+    }
+    #team{
+        width: 1570rem;
+        padding-bottom: 40rem;
+    }
+    .team__body-slide{
+        width: 1570rem !important;
+        display: flex;
+        gap: 38rem;
+    }
+    .team__body-slide img{
+        width: 364rem;
+        height: 440rem;
+    }
+    .splide__arrow{
+        width: 64rem;
+        height: 64rem;
+        background: #0086DB;
+    }
+    .splide__arrow svg{
+        fill: none;
+        width: 10rem;
+        height: 16rem;
+    }
+    .splide__arrow--next{
+        right: -40rem;
+    }
+    .splide__arrow--prev{
+        left: -40rem;
+    }
+    .splide__pagination__page.is-active{
+        background: #0086DB;
     }
 }

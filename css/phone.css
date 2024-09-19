@@ -13,6 +13,12 @@
 .header__tel:hover{
     color: #0086DB;
 }
+.header__nav.fixed .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link{
+    color: #ccc ;
+}
+.header__nav.fixed .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link:hover{
+    color: #0086DB;
+}
 @media (max-width: 768px) {
     .header__tel{
         display: none;
