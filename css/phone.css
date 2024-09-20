@@ -13,11 +13,19 @@
 .header__tel:hover{
     color: #0086DB;
 }
+@media (max-width: 768px) {
+    .header__nav .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link{
+        color: #ccc  !important;
+    }
+    .header__nav .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link:hover{
+        color: #0086DB !important;
+    }
+}
 .header__nav.fixed .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link{
-    color: #ccc ;
+    color: #ccc  !important;
 }
 .header__nav.fixed .wrapper .nav-wrap .menu-menyu-v-shapke-container .nav .nav-item .nav-link:hover{
-    color: #0086DB;
+    color: #0086DB !important;
 }
 @media (max-width: 768px) {
     .header__tel{
